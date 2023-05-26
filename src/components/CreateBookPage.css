@@ -1,0 +1,206 @@
+.create-book-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+}
+
+.text-container {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.welcome-container h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-book-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.button-container p {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.create-book-container p {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.create-book-container button {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+  margin: 5px;
+  font-size: 16px;
+  border: none;
+}
+
+.create-book-container button:hover {
+  background-color: #45a049;
+}
+
+.form-container {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  margin-top: 20px;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.form-container input[type='text'],
+.form-container textarea,
+.form-container input[type='date'] {
+  width: 100%;
+  padding: 7px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-container textarea {
+  height: 100px;
+}
+
+.form-container button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-container button.cancel-button {
+  background-color: red;
+  margin-left: 10px;
+}
+
+.form-container button:hover {
+  background-color: #45a049;
+}
+
+.photo-preview {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.preview-container {
+  position: relative;
+  margin: 10px;
+  width: 150px;
+  height: 150px;
+}
+
+.preview-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.preview-container:hover img {
+  transform: scale(1.1);
+}
+
+.photo-options {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.photo-option {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  color: #000;
+  font-size: 16px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.photo-option:hover {
+  color: #f44336;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.photo-option.delete {
+  color: #f44336;
+}
+
+.photo-option.delete:hover {
+  color: #c62828;
+}
+
+.photo-option.download {
+  color: #2196f3;
+}
+
+.photo-option.download:hover {
+  color: #0d47a1;
+}
+
+.file-input-label {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+.file-input-label:hover {
+  background-color: #45a049;
+}
+
+.file-input-label input[type='file'] {
+  display: none;
+}

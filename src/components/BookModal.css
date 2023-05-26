@@ -1,0 +1,183 @@
+/* Estilos para o BookModal */
+.book-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .book-modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+    position: relative; /* Adicionado para posicionar o botão corretamente */
+  }
+  
+  .book-name {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .book-photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .book-photo {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .book-photo img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  
+  .book-photo:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .photo-options {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: translateY(10px);
+  }
+  
+  .book-photo:hover .photo-options {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .photo-option {
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-size: 16px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: color 0.3s;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .photo-option:hover {
+    color: #f44336;
+  }
+  
+  .photo-option.delete {
+    color: #f44336;
+  }
+  
+  .photo-option.delete:hover {
+    color: #c62828;
+  }
+  
+  .photo-option.download {
+    color: #2196f3;
+  }
+  
+  .photo-option.download:hover {
+    color: #0d47a1;
+  }
+  
+  .close-button {
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .close-button:hover {
+    color: #f44336;
+  }
+  
+  .delete-confirm {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .confirm-buttons {
+    margin-top: 10px;
+  }
+  
+  .confirm-buttons button {
+    background-color: #45a049;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .confirm-buttons button:hover {
+    background-color: #c62828;
+  }
+  
+  .close-button.custom-close-button {
+    background-color: #45a049;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-photo-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .add-photo-button input[type='file'] {
+    display: none;
+  }
+  
+  .add-photo-button label {
+    background-color: #45a049;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-photo-button label:hover {
+    background-color: #0d47a1;
+  }
+  
