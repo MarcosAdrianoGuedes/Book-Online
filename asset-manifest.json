@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/https://github.com/MarcosAdrianoGuedes/Book-Online/static/css/main.494f0e3a.css",
+    "main.js": "/https://github.com/MarcosAdrianoGuedes/Book-Online/static/js/main.c7c967c5.js",
+    "index.html": "/https://github.com/MarcosAdrianoGuedes/Book-Online/index.html",
+    "main.494f0e3a.css.map": "/https://github.com/MarcosAdrianoGuedes/Book-Online/static/css/main.494f0e3a.css.map",
+    "main.c7c967c5.js.map": "/https://github.com/MarcosAdrianoGuedes/Book-Online/static/js/main.c7c967c5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.494f0e3a.css",
+    "static/js/main.c7c967c5.js"
+  ]
+}
